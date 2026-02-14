@@ -1,22 +1,20 @@
-namespace KnightMoves
+namespace knightmoves;
+
+public class Awarder
 {
-    public class Awarder
+    public string CalculateAward(int points)
     {
-        public int points = 100;
-        public string CalculateAward()
+        if (points > 99)
         {
-            if (points > 99)
-            {
-                return "First Place";
-            }
-            else if (points > 49 && points < 100)
-            {
-                return "Second Place";
-            }
-            else
-            {
-                return "Participation Award";
-            }
+            return "First Place";
+        }
+        else if (points > 49)
+        {
+            return "Second Place";
+        }
+        else
+        {
+            return "Participation Award";
         }
     }
 }
