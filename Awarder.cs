@@ -1,16 +1,16 @@
-﻿namespace knightmoves;
-public class Awarder
+namespace KnightMoves
 {
-    // Add your code here
-    public string CalculateAward(points){
-        if(points > 99){
-            return "First Place";
-        }
-        if(points > 49 && points < 100){
+    public class Awarder
+    {
+        public int points = 100;
+       public string CalculateAward(points > 99){
+           return "First Place";
+       }
+        else if(points > 49 && points < 100){
             return "Second Place";
-        } else {
-            return "Participation Award";
         }
+        else{
+            return "Participation Award";
+        };
     }
 }
-
